@@ -2,10 +2,9 @@ pipeline {
   agent any
   stages {
     stage('build') {
+      agent any
       steps {
-        sh '''echo "hello world"
-
-maven clean package'''
+        sh 'echo $env'
       }
     }
   }
