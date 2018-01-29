@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh '''echo "hello world"
 
-mvn clean package'''
+maven clean package'''
       }
     }
   }
