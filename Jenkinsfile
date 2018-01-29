@@ -4,7 +4,7 @@ pipeline {
     stage('build') {
       agent any
       steps {
-        sh 'echo $env'
+        sh 'echo mvn -version'
       }
     }
   }
